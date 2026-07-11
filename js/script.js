@@ -63,3 +63,33 @@ ScrollReveal().reveal(".trip__card", {
   ...scrollRevealOption,
   interval: 500,
 });
+
+
+
+const searchBtn = document.getElementById("searchBtn");
+
+searchBtn.addEventListener("click", () => {
+
+    const destination = document.getElementById("destination").value;
+    const checkin = document.getElementById("checkin").value;
+    const checkout = document.getElementById("checkout").value;
+    const guests = document.getElementById("guests").value;
+
+    if(destination==="" || checkin==="" || checkout===""){
+        alert("Please fill all fields");
+        return;
+    }
+
+    alert(
+        `Searching Hotels
+
+Destination : ${destination}
+
+Check In : ${checkin}
+
+Check Out : ${checkout}
+
+Guests : ${guests}`
+    );
+
+});

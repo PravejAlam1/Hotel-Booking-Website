@@ -7,7 +7,7 @@
       href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
     <title>StaySphere</title>
   </head>
   <body>
@@ -40,6 +40,47 @@
             <button class="btn">Search Stays</button>
             <button class="btn">Login</button>
           </div>
+
+          <div class="search__box">
+  <div class="search__field">
+    <label>Destination</label>
+    <input
+      type="text"
+      id="destination"
+      placeholder="Enter City"
+    />
+  </div>
+
+  <div class="search__field">
+    <label>Check In</label>
+    <input
+      type="date"
+      id="checkin"
+    />
+  </div>
+
+  <div class="search__field">
+    <label>Check Out</label>
+    <input
+      type="date"
+      id="checkout"
+    />
+  </div>
+
+  <div class="search__field">
+    <label>Guests</label>
+    <input
+      type="number"
+      id="guests"
+      min="1"
+      value="1"
+    />
+  </div>
+
+  <button class="search__btn" id="searchBtn">
+    Search Hotels
+  </button>
+</div>
         </div>
       </div>
     </header>
@@ -298,6 +339,6 @@
     </footer>
 
     <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
